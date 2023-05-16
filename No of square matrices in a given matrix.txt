@@ -1,0 +1,17 @@
+import java.util.Scanner;         //scanner class
+public class Main {                   //class
+    public static void main(String[] args) {             //main function
+        int sum=0;                   //initializing sum as 0
+        Scanner sc=new Scanner(System.in);              //creating object sc from scanner class
+        System.out.println("Enter a number:");            //prints the statement in the bracket
+        int a=sc.nextInt();                //reads the input
+        if(a<=0){                  //if condition to check if the entered no is less than or equal to 0
+            System.out.println("Invalid");
+        }
+        while(a!=0){                 //when a is not equal to 0
+            sum+=a*a;                //here we first multiply a with a add it to sum i.e 0 and decrement a value
+            a--;                    //decrementing a
+        }
+        System.out.println("The no of square matrices is:"+sum);        //prints output
+    }
+    }
