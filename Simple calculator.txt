@@ -1,0 +1,29 @@
+import java.util.Scanner;                           //importing scanner
+public class Main {                                //main class
+
+    public static void main(String[] args){           //main method
+   Scanner sc=new Scanner(System.in);             //creating object with scanner
+        System.out.println("Enter a:");          //prints
+        int a=sc.nextInt();                   //reads a
+        System.out.println("Enter b:");
+        int b=sc.nextInt();                       //reads b
+        System.out.println("Enter the operator:");
+        char ch=sc.next().charAt(0);                    //reads character ch
+        switch(ch){                                   //switch statement
+            case '+':int res=a+b;                        //if '+' operator
+                System.out.println(res);
+            case '-':int res1=a-b;                     //if '-' operator
+                System.out.println(res1);
+            case '*':int res2=a*b;                      // //if * operator
+                System.out.println(res2);
+            case '/':if(b==0){                           //if '/' operator
+                System.out.println("0");
+            }
+            else {
+                int res3 = a / b;
+                System.out.println(res3);
+            }
+        }
+
+    }
+    }
